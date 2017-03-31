@@ -266,6 +266,10 @@ public class JWaveNode {
 	public JWaveNodeSleepMode getSleepMode(){
 		return this.sleepMode;
 	}
+
+	public void setSleepModeForced(JWaveNodeSleepMode mode){
+		this.sleepMode = mode;
+	}
 	
 	public boolean isSleeping(){
 		return sleepMode == JWaveNodeSleepMode.SLEEP_MODE_SLEEPING;
